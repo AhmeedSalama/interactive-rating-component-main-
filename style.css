@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%)
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--VeryDarkBlue);
+    font-family: "Overpass", sans-serif;
+    flex-direction: column;
+}
+
+.Howdid{
+    background-color: var(--DarkBlue);
+    width: 375px;
+    height: 375px;
+    border-radius: 25px;
+    padding: 25px;
+}
+.Howdid img{
+    background-color: #2b333c;
+    padding: 14px;
+    border-radius: 50%;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+}
+
+.text h1{
+color: white;
+font-size: 28px;
+}
+.text p{
+    color: var(--Light-Grey);
+    font-size: 15px;
+    margin: 15px 0px 25px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+ul li{
+background-color: #2b333c;
+color: var(--Light-Grey);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 50px;
+width: 50px;
+border-radius: 50%;
+cursor: pointer;
+transition: 0.3s;
+font-weight: bold;
+line-height: 1px;
+}
+
+ul li:hover{
+background-color: var(--Orange);
+color: var(--VeryDarkBlue);
+}
+
+.selectedLi{
+    background-color: white;
+    color: var(--VeryDarkBlue);
+}
+button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: var(--Orange);
+    transition: 0.3s;
+    border-color: transparent;
+    margin-top: 25px;
+}
+
+button:hover{
+    background-color: white;
+    
+}
+
+.ThankYou{
+    background-color: var(--DarkBlue);
+    width: 375px;
+    height: 375px;
+    border-radius: 25px;
+    padding: 25px;
+    text-align: center;
+    display: none;
+}
+
+.ThankYou img{
+    margin: 20px 0px 20px;
+}
+
+.ThankYou h1{
+    color: white;
+    font-size: 28px;
+    margin: 30px 0px 15px;
+}
+
+.ThankYou .Youselected{
+   color: var(--Orange); 
+   font-size: 15px;
+   background-color: #2b333c;
+   width: fit-content;
+   margin: 0px auto;
+   text-align: center;
+   padding: 10px 25px;
+   border-radius: 20px;
+}
+
+.ThankYou .TextThankYou{
+    width: 336px;
+}
+
+.ThankYou .TextThankYou p{
+    color: var(--Light-Grey);
+    font-size: 15px;
+}
